@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    background-color: lightcoral;
+}
+.carosello{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    width: 70%;
+    height: 70%;
+}
+.slide{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.current{
+    display: block;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.previous, .next{
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: aqua;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 80px;
+}
+.carosello .previous{
+    left: 20px;
+}
+.carosello .next{
+    right: 20px;
+}
+.previous:hover, .next:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
